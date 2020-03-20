@@ -1,0 +1,191 @@
+<html>
+	<head>
+		 <title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <meta charset="utf-8">
+		 <style>
+		.prev,
+		.next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 40%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  border-radius: 0 2px 2px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 1px 0 0 1px;
+}
+	</style>
+	</head>
+		<body>
+			<link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
+			<script src="./js/bootstrap.js" type="text/javascrpit"></script>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+			
+		<div class="container">
+			<div class="row">
+							<div class="col-xs-12 col-md-12 col-lg-12">
+								<div class="row" style="padding:5px">
+									<div class="col-xs-12 col-md-4 col-lg-4">
+										<img src="./images/logo1.png"/ class="img-responsive" >		
+									</div>
+						
+									<div class="col-xs-12 col-md-8 col-lg-8">
+										<nav class="navbar navbar-expand-sm bg-light">
+											<ul class="navbar-nav ml-auto">
+												<li class="nav-item">
+													<a class="nav-link" href="bootstrap.html">Home</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="contactus.html">ContactUs</a>
+												</li>
+												<li class="nav-item">
+													<a class="nav-link" href="#">AboutUs</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+			</div>
+						<div class="col-xs-12 col-md-12 col-lg-12">
+								<div class="container">
+									 <div class="mySlides">
+										<img src="./images/banner1.jpeg"/ style="width:100%">
+									  </div>
+									<div class="mySlides">
+										<img src="./images/shopping10.jpg"/ style="width:100%">
+									  </div>
+
+									  <div class="mySlides">
+										<img src="./images/shopping8.jpeg"/ style="width:100%">
+									  </div>
+									<a class="prev" onclick="plusSlides(-1)"><</a>
+									<a class="next" onclick="plusSlides(1)">></a>
+									<div class="caption-container">
+										<p id="caption"></p>
+									</div>
+								<script>
+									var slideIndex = 1;
+										showSlides(slideIndex);
+
+										function plusSlides(n) {
+										  showSlides(slideIndex += n);
+										}
+
+									
+										function showSlides(n) {
+										  var i;
+										  var slides = document.getElementsByClassName("mySlides");
+										  var dots = document.getElementsByClassName("demo");
+										  var captionText = document.getElementById("caption");
+										  if (n > slides.length) {slideIndex = 1}
+										  if (n < 1) {slideIndex = slides.length}
+										  for (i = 0; i < slides.length; i++) {
+											  slides[i].style.display = "none";
+										  }
+										  for (i = 0; i < dots.length; i++) {
+											  dots[i].className = dots[i].className.replace(" active", "");
+										  }
+										  slides[slideIndex-1].style.display = "block";
+										  dots[slideIndex-1].className += " active";
+										  captionText.innerHTML = dots[slideIndex-1].alt;
+										}
+								</script>
+										
+							
+							
+							
+				<div class="col-xs-12 col-md-12 col-lg-12">
+					<div class="row" style="padding:5px">
+						<div class="col-xs-4 col-md-4 col-lg-4">
+							<img src="./images/shopping4.jpg"/ class="img-responsive" width="100%" >
+						</div>
+						<div class="col-xs-4 col-md-4 col-lg-4">
+							<img src="./images/shopping2.jpg"/ class="img-responsive" width="100%" >
+						</div>
+						<div class="col-xs-4 col-md-4 col-lg-4">
+							<img src="./images/shopping5.jpg"/ class="img-responsive" width="100%" >
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-12 col-lg-12">
+					<div class="row" style="padding:5px">
+						<h3>welcome to flipkart</h3>
+							<p>Flipkart is an e-commerce company based in Bengaluru, 
+								India that was recently bought by American retail titan Walmart. 
+								The company was established by former Amazon employees
+								Binny Bansal and Sanchin Bansal in October 2007.
+								The news confirms months of speculation that Walmart was in talks to buy Flipkart,
+								though both companies remained mum on any possible talks. 
+								Flipkart is India’s largest online commerce company but has been fighting off Jeff Bezos’s 
+								Amazon since its entry and subsequent aggres</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-12 col-lg-12">
+					<div class="row" style="background-color:#a366ff">
+						<div class="col-xs-6 col-md-6 col-lg-6">
+							<div class="panel panel-primary">
+								<div class="panel-heading">Get connected with us on social networks!</div>
+							</div>
+						</div>
+							<div class="col-xs-6 col-md-6 col-lg-6">
+								<a class="fb-ic">
+									<i class="fa fa-facebook" style="padding:5px"></i>
+								</a>
+								<a class="fb-ic">
+									<i class="fa fa-instagram" style="padding:5px"></i>
+								</a>
+								<a class="fb-ic">
+									<i class="fa fa-twitter" style="padding:5px"></i>
+								</a>
+								<a class="fb-ic">
+									<i class="fa fa-google-plus" style="padding:5px"></i>
+								</a>
+								<a class="fb-ic">
+									<i class="fa fa-linkedin" style="padding:5px"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				<div class="col-xs-12 col-md-12 col-lg-12">
+					<div class="row" style="background-color:black">
+						<div class="col-xs-3 col-md-3 col-lg-3">
+							<h5 style="color:white"><u>company name </u></h5>
+							<h6 style="color:white">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+						</div>
+						<div class="col-xs-3 col-md-3 col-lg-3">
+								<h5 style="color:white"><u>Products </u></h5>
+								<p style="color:white">MDBootstrap</P>
+								<p style="color:white">MDWordPress</p>
+								<p style="color:white">BrandFlow</p>
+						</div>
+						<div class="col-xs-3 col-md-3 col-lg-3">
+							<h5 style="color:white"><u>usefull links </u></h5>
+								<p style="color:white">Your Account</P>
+								<p style="color:white">Become an Affiliate</p>
+								<p style="color:white">Shipping Rates</p>
+						</div>
+						<div class="col-xs-3 col-md-3 col-lg-3">
+							<h5 style="color:white"><u>contact </u></h5>
+								<p style="color:white">New York, NY 10012, US</p>    
+								<p style="color:white">info@example.com</p>
+								<p style="color:white">+ 01 234 567 88</p>
+						</div>		
+					</div>
+				</div>
+		</div>
+				
+						
+	</body>
+</html>
